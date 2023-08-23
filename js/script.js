@@ -11,9 +11,17 @@ const inputYear = document.querySelector('#valid-year')
 const inputCVV = document.querySelector('#cvv_input')
 
 function nameReceive(){
-    if (inputName == '') {
-        cardName.innerHTML = 'Teste'
+    if (inputName.value == "") {
+        cardName.innerHTML = "Jane Appleseed"
     } else {
         cardName.innerHTML = inputName.value;
+    }
+}
+
+function numbersReceive() {
+    if (inputNumber.value == '') {
+        cardNumber.innerHTML = '0000 0000 0000 0000'
+    } else {
+        cardNumber.innerHTML = inputNumber.value;
     }
 }
