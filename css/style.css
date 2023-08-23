@@ -29,3 +29,72 @@ label{
     flex-direction: row;
     
 }
+
+.left-session {
+    width: 35%;
+    min-height: 100vh;
+    background-image: url(../images/bg-main-desktop.png);
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+.card-details {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 10%;
+    left: 40%;
+    gap: 1rem;    
+}
+
+.card-front {
+    position: relative;
+    transform: translateX(50px);
+    margin-top: 50px;
+}
+
+.logo {
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+}
+
+#card-number{
+    position: absolute;
+    color: var(--White);
+    bottom: 5rem;
+    left: 1rem;
+    letter-spacing: 5px;
+    font-size: 24px;
+    margin-left: 20px;
+}
+
+#card-name {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.user-info {
+    position: absolute;
+    bottom: 2rem;
+    left: 1rem;
+    right: 3rem;
+    display: flex;
+    color: var(--White);
+    justify-content: space-between;
+    margin-left: 20px;
+}
+
+.card-back{
+    position: relative;
+    margin-top: 15px;
+    transform: translateX(150px);
+}
+
+
+#card-cvv {
+    position: absolute;
+    top: 6.3rem;
+    right: 3.5rem;
+}
