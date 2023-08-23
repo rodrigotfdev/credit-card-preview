@@ -8,7 +8,7 @@
   <title>Frontend Mentor | Interactive card details form</title>
 </head>
 <body>
-
+<!-- Left Session Begning -->
   <div class="container">
     <div class="left-session">
       <div class="card-details">
@@ -29,7 +29,53 @@
         </div>
       </div>
     </div>
+<!-- Left Session End -->
+<!-- Form Session Begning -->
+    <div id="user-form"> 
+      <div class="form">
+        <form method="post">
+          <div>
+            <label for="input_name">Cardholder Name</label>
+            <input name="holder_name" type="text" class="input-lg mb" id="input_name" placeholder="Ex:  Jane Appleseed"
+              required autocomplete="off" oninput="nameReceive()">
+            <p class="error error-invalid-name">This field cannot contain numbers.</p>
+            <p class="error error-empty-name">This field is mandatory.</p>
+          </div>
 
+          <div>
+            <label for="input_number">Card Number</label>
+            <input name="numero" type="text" class="input-lg mb" id="input_number" placeholder="EX: 1234 5678 9123 0000"
+              minlength="19" maxlength="19" required autocomplete="off" oninput="numbersReceive()">
+            <p class="error error-invalid-number">This field must contain only numbers.</p>
+            <p class="error error-empty-number">This field is mandatory.</p>
+          </div>
+
+          <div>
+            <label for="">Exp date</label>
+
+            <input type="number" class="input-sm mb validade" name="" id="valid-month" placeholder="MM" minlength="2"
+              maxlength="2" required autocomplete="off"
+              oninput="if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength); monthReceive()">
+            <input type="number" class="input-sm mb validade" name="" id="valid-year" placeholder="AA" minlength="2"
+              maxlength="2" autocomplete="off" required
+              oninput="if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength); yearReceive()">
+            <p class="error error-empty-date">Please fill in the fields correctly.</p>
+
+            <label for="cvv_input">Security Code</label>
+            <input type="number" class="input-sm mb" name="cvv" id="cvv_input" placeholder="CVV" minlength="3"
+              maxlength="3" autocomplete="off" required
+              oninput="if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength); recebeCodigo()">
+            <p class="error error-empty-cvv">Please fill out the fields correctly.</p>
+          </div>
+
+          <button type="button" id="botao" class="btn">
+            <h3 style="color: white;" onclick="validaDados()">Confirmar</h3>
+          </button>
+        </form>
+      </div>
+
+    </div>
+   
 
 
 

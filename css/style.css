@@ -1,4 +1,5 @@
-*{
+/* GLOBAL VARIABLES*/
+*{ 
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -23,6 +24,8 @@ label{
     display:block;
     text-transform: uppercase;
 }
+/*LEFT SESSION */
+
 .container {
     
     display: flex;
@@ -97,4 +100,83 @@ label{
     position: absolute;
     top: 6.3rem;
     right: 3.5rem;
+}
+ 
+/*END OF THE LEFT SESSION*/
+
+/* FORM SECTION */
+ 
+
+ #user-form{ 
+    width: 60%;
+    height: 100vh;
+    background-color: var(--White);
+    display: flex;
+}
+
+.mb{
+    margin-bottom: 1em;
+}
+
+.form{
+    width: 60%;
+    justify-content: right;
+    justify-self: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 380px;
+    
+}
+
+.input-lg{
+    width: 80%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.input-sm{
+    width: 30%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+input:focus{
+    border-color: var(--VeryDarkViolet);
+    background-color: var(--White);
+    outline: none;
+    box-shadow: 0 0 10px var(--VeryDarkViolet);
+    transition: ease-in 0.25s;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+input[type=number] { 
+   -moz-appearance: textfield;
+    appearance: textfield;
+
+}
+
+.btn{
+    margin-top: 20px;
+    width: 80%;
+    border: 1px solid black;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    padding: 5px;
+    background-color: var(--VeryDarkViolet);
+    color: var(--White);
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.btn:hover{
+    opacity: 0.5;
+}
+
+.error{
+    font-size: 0.8rem;
+    color: red;
+    margin-top: -5px;
+    display: none;
 }
