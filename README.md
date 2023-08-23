@@ -28,7 +28,7 @@ The users should be able to:
 
 ## Github Pages Link
 
-https://rodrigotfdev.github.io/credit-card-preview/
+[GitHub Pages](https://rodrigotfdev.github.io/credit-card-preview/)
 
 ## Website preview
 
