@@ -2,14 +2,7 @@
 
 
 
-![desktopPreview](https://github.com/rodrigotfdev/credit-card-preview/assets/52326702/d8f1484a-2b20-44c0-98a6-5e1808d4e6ba)
 
-![desktopFinished](https://github.com/rodrigotfdev/credit-card-preview/assets/52326702/75432c8b-18a2-4419-8564-f89efbcadeed)
-
-
- ![mobilepreview](https://github.com/rodrigotfdev/credit-card-preview/assets/52326702/b9180978-bb8c-43a6-ac7e-31691dddb46e)| ![mobileFinished](https://github.com/rodrigotfdev/credit-card-preview/assets/52326702/aacae77e-475f-41df-9bbf-c9c6626376d7)
-
- 
 
 
 ## The challenge
@@ -32,6 +25,19 @@ The users should be able to:
 - Validate the form fields when the form is submitted
 - If there are no errors, display the completed state
 - Reset the form when the user clicks "Continue" on the completed state
+
+
+
+##Website preview
+
+![desktopPreview](https://github.com/rodrigotfdev/credit-card-preview/assets/52326702/d8f1484a-2b20-44c0-98a6-5e1808d4e6ba)
+
+![desktopFinished](https://github.com/rodrigotfdev/credit-card-preview/assets/52326702/75432c8b-18a2-4419-8564-f89efbcadeed)
+
+
+ ![mobilepreview](https://github.com/rodrigotfdev/credit-card-preview/assets/52326702/b9180978-bb8c-43a6-ac7e-31691dddb46e)| ![mobileFinished](https://github.com/rodrigotfdev/credit-card-preview/assets/52326702/aacae77e-475f-41df-9bbf-c9c6626376d7)
+
+ 
 
 
 
