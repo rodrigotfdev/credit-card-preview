@@ -42,4 +42,12 @@ function yearReceive() {
       }
 }
 
+function cvvReceive() {
+    if (inputCVV.value == "") {
+        cardCVV.innerHTML = "00";
+      } else {
+        cardCVV.innerHTML = inputCVV.value;
+      }
+}
+
 

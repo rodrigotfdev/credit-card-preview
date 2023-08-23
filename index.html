@@ -64,7 +64,7 @@
             <label for="cvv_input">Security Code</label>
             <input type="number" class="input-sm mb" name="cvv" id="cvv_input" placeholder="CVV" minlength="3"
               maxlength="3" autocomplete="off" required
-              oninput="if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength); recebeCodigo()">
+              oninput="if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength); cvvReceive()">
             <p class="error error-empty-cvv">Please fill out the fields correctly.</p>
           </div>
 
