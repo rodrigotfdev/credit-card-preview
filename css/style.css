@@ -1,45 +1,46 @@
 /* GLOBAL VARIABLES*/
-*{ 
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Space Grotesk', sans-serif;
-    font-size: 18px; 
+    font-size: 18px;
 }
-body{
+
+body {
     min-height: 100vh;
 }
 
-:root{
+:root {
     --White: hsl(0, 0%, 100%);
     --LightViolet: hsl(270, 3%, 87%);
     --DarkGreyishViolet: hsl(279, 6%, 55%);
     --VeryDarkViolet: hsl(278, 68%, 11%);
 }
 
-label{
+label {
     color: var(--VeryDarkViolet);
     font-weight: 500;
     font-size: 1rem;
-    display:block;
+    display: block;
     text-transform: uppercase;
 }
+
 /*LEFT SESSION */
 
 .container {
-    
     display: flex;
     flex-direction: row;
-    
 }
 
 .left-session {
     width: 35%;
-    min-height: 100vh;
+   
     background-image: url(../images/bg-main-desktop.png);
     background-size: cover;
     background-position: center center;
     position: relative;
+
 }
 
 .card-details {
@@ -48,7 +49,7 @@ label{
     flex-direction: column;
     top: 10%;
     left: 40%;
-    gap: 1rem;    
+    gap: 1rem;
 }
 
 .card-front {
@@ -63,7 +64,7 @@ label{
     left: 1.5rem;
 }
 
-#card-number{
+#card-number {
     position: absolute;
     color: var(--White);
     bottom: 5rem;
@@ -89,7 +90,7 @@ label{
     margin-left: 20px;
 }
 
-.card-back{
+.card-back {
     position: relative;
     margin-top: 15px;
     transform: translateX(150px);
@@ -101,45 +102,48 @@ label{
     top: 6.3rem;
     right: 3.5rem;
 }
- 
+
 /*END OF THE LEFT SESSION*/
 
 /* FORM SECTION */
- 
 
- #user-form{ 
-    width: 60%;
+
+#user-form {
+    width: 65%;
     height: 100vh;
     background-color: var(--White);
     display: flex;
+    flex-direction: row;
+    
 }
 
-.mb{
+.mb {
     margin-bottom: 1em;
 }
 
-.form{
+.form {
     width: 60%;
     justify-content: right;
     justify-self: center;
     margin-top: auto;
     margin-bottom: auto;
     margin-left: 380px;
-    
+
 }
 
-.input-lg{
+.input-lg {
     width: 80%;
     padding: 5px;
     box-sizing: border-box;
 }
 
-.input-sm{
+.input-sm {
     width: 30%;
     padding: 5px;
     box-sizing: border-box;
 }
-input:focus{
+
+input:focus {
     border-color: var(--VeryDarkViolet);
     background-color: var(--White);
     outline: none;
@@ -147,17 +151,18 @@ input:focus{
     transition: ease-in 0.25s;
 }
 
-input[type=number]::-webkit-inner-spin-button { 
+input[type=number]::-webkit-inner-spin-button {
     -webkit-appearance: none;
-    
+
 }
-input[type=number] { 
-   -moz-appearance: textfield;
+
+input[type=number] {
+    -moz-appearance: textfield;
     appearance: textfield;
 
 }
 
-.btn{
+.btn {
     margin-top: 20px;
     width: 80%;
     border: 1px solid black;
@@ -170,18 +175,18 @@ input[type=number] {
     transition: all 0.5s;
 }
 
-.btn:hover{
+.btn:hover {
     opacity: 0.5;
 }
 
-.error{
+.error {
     font-size: 0.8rem;
     color: red;
     margin-top: -5px;
     display: none;
 }
 
-.wrapper{
+.wrapper {
     width: 100%;
     height: 100vh;
     background-color: rgba(255, 255, 255, 0.6);
@@ -190,7 +195,7 @@ input[type=number] {
     display: none;
 }
 
-.complete{
+.complete {
     max-width: 400px;
     border-radius: 20px;
     margin: 10% auto;
@@ -200,13 +205,135 @@ input[type=number] {
     padding: 10px 0;
 }
 
-.complete-message{
+.complete-message {
     width: fit-content;
     margin: 0 auto;
     text-align: center;
 }
 
-.complete-message h1{
+.complete-message h1 {
     font-size: 2rem;
     letter-spacing: 2px;
+}
+
+
+
+@media (max-width: 375px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .left-session {
+        width: 100%;
+        height: 300px;
+        background-image: url(../images/bg-main-desktop.png);
+        background-size: cover;
+        background-position: center center;
+        position: relative;
+    }
+    
+    .card-details {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 0;
+        left: 0;
+        gap: 1rem;
+        
+    }
+    
+    .card-front {
+        /* position: relative;
+        transform: translateX(-100px); */
+    }
+
+    .card-front img {
+        width: 285px;
+        height: 156px;
+    }
+    
+    .card-container img {
+        width: 54px;
+        height: 30px;
+    }
+
+    .logo {
+
+        position: absolute;
+        top: 1.5rem;
+        left: 1.5rem;
+    }
+    
+    #card-number {
+        position: absolute;
+        color: var(--White);
+        top: 90px;
+        left: 1rem;
+        letter-spacing: 3px;
+        font-size: 17px;
+        margin-left: 20px;
+    }
+    
+    #card-name {
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-size: 10px;
+    }
+
+    #card-month,
+    #card-year {
+        font-size: 10px;
+    }
+
+    .card-dates {
+        position: absolute;
+        bottom: -3px;
+        right: -20px;
+    }
+    
+    .user-info {
+        position: absolute;
+        bottom: 20px;
+        left: 1rem;
+        right: 3rem;
+        display: flex;
+        color: var(--White);
+        justify-content: space-between;
+        margin-left: 20px;
+        font-size: 10px;
+    }
+
+
+    .card-back {
+        position: relative;
+        transform: translateX(50px);
+    }
+
+    .card-back img {
+        width: 285px;
+        height: 156px;
+    }
+    
+    #card-cvv {
+        position: absolute;
+        top: 67px;
+        right: 2rem;
+    }
+
+    /* FORM MEDIA QUERIE */
+
+    
+    
+    .form {
+        
+        width: 374px;
+        position: absolute;
+        transform: translateX(-380px);
+        margin-top: 150px;
+        text-align: center;
+    }
+
+
+
 }
