@@ -10,4 +10,10 @@ const inputMonth = document.querySelector('#valid-month')
 const inputYear = document.querySelector('#valid-year')
 const inputCVV = document.querySelector('#cvv_input')
 
-
+function nameReceive(){
+    if (inputName == '') {
+        cardName.innerHTML = 'Teste'
+    } else {
+        cardName.innerHTML = inputName.value;
+    }
+}
