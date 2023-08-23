@@ -1,6 +1,6 @@
 # Frontend Mentor - Interactive card details form
 
-![Design preview for the Interactive card details form coding challenge](./design/desktop-preview.jpg)
+
 
 ![desktopPreview](https://github.com/rodrigotfdev/credit-card-preview/assets/52326702/d8f1484a-2b20-44c0-98a6-5e1808d4e6ba)
 
