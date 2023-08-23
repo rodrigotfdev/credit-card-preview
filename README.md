@@ -26,9 +26,11 @@ The users should be able to:
 - If there are no errors, display the completed state
 - Reset the form when the user clicks "Continue" on the completed state
 
+## Github Pages Link
 
+https://rodrigotfdev.github.io/credit-card-preview/
 
-##Website preview
+## Website preview
 
 ![desktopPreview](https://github.com/rodrigotfdev/credit-card-preview/assets/52326702/d8f1484a-2b20-44c0-98a6-5e1808d4e6ba)
 
