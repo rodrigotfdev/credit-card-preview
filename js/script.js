@@ -10,6 +10,14 @@ const inputMonth = document.querySelector("#valid-month");
 const inputYear = document.querySelector("#valid-year");
 const inputCVV = document.querySelector("#cvv_input");
 
+inputNumber.addEventListener("keypress", () => {
+    let numberLength = inputNumber.value.length;
+  
+    if (numberLength === 4 || numberLength === 9 || numberLength === 14) {
+        inputNumber.value += " ";
+    }
+  });
+
 function nameReceive() {
   if (inputName.value == "") {
     cardName.innerHTML = "Jane Appleseed";
